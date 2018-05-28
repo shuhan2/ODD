@@ -42,12 +42,12 @@ public class FizzBuzzGameTest {
         outInitNumber(Arrays.asList(1,2,11,22,79));
     }
     
-    private void outSpecialString(List<Integer> list,String result){
+    private void outSpecialString(List<String> list,String result){
         for (int i = 0; i < list.size(); i++) {
             Assert.assertEquals(result, game.getResult(list.get(i)));
         }
     }
-    private void outInitNumber(List<Integer> list) {
+    private void outInitNumber(List<String> list) {
         for (int i = 0; i < list.size(); i++) {
             Assert.assertEquals(String.valueOf(list.get(i)), game.getResult(list.get(i)));
 
