@@ -18,7 +18,6 @@ git# TDD FizzBuzzWhizz
 ```
 100
 ```
-
 输出（片段）
 ```
 1

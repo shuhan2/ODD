@@ -11,7 +11,7 @@ public class FizzBuzzGameTest {
     private FizzBuzzGame game = new FizzBuzzGame();
     @Test
     public void should_return_Fizz_when_have_3() {
-        outSpecialString(Arrays.asList(3,6,13,31,35,57),"Fizz");
+        outSpecialString(Arrays.asList(3,6,13,31,35,57,63),"Fizz");
     }
     @Test
     public void should_return_Buzz_when_have_5() {
@@ -42,12 +42,12 @@ public class FizzBuzzGameTest {
         outInitNumber(Arrays.asList(1,2,11,22,79));
     }
     
-    private void outSpecialString(List<String> list,String result){
+    private void outSpecialString(List<Integer> list,String result){
         for (int i = 0; i < list.size(); i++) {
             Assert.assertEquals(result, game.getResult(list.get(i)));
         }
     }
-    private void outInitNumber(List<String> list) {
+    private void outInitNumber(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             Assert.assertEquals(String.valueOf(list.get(i)), game.getResult(list.get(i)));
 
